@@ -6,7 +6,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Otter Parent Pom</name>
-	<description>Parent pom for Otter projects specifing sensible defaults</description>
+	<description>Parent pom for Otter projects specifying sensible defaults</description>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -20,8 +20,8 @@
 	</organization>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<supervision-api.version>1.0.5-SNAPSHOT</supervision-api.version>
-		<frontend.version>1.0.6-SNAPSHOT</frontend.version>
+		<supervision-api.version>1.0.5</supervision-api.version>
+		<frontend.version>1.0.6</frontend.version>
 		<ldap.version>1.1.3</ldap.version>
 		<servlet-api.version>2.5</servlet-api.version>
 		<htmleasy.version>0.7</htmleasy.version>
