@@ -43,6 +43,10 @@
 		</repository>
 	</repositories>
 
+	<scm>
+		<developerConnection>scm:git:ssh://git@github.com/ucam-cl-dtg/otter-parent</developerConnection>
+	</scm>
+
 	<build>
 		<plugins>
 			<plugin>
