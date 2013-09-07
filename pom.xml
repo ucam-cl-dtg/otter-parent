@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.ac.cam.cl.dtg.teaching</groupId>
 	<artifactId>otter-parent</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Otter Parent Pom</name>
 	<description>Parent pom for Otter projects specifying sensible defaults</description>
