@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.ac.cam.cl.dtg.teaching</groupId>
 	<artifactId>otter-parent</artifactId>
@@ -31,6 +32,27 @@
 		<postgresql.version>9.1-901.jdbc4</postgresql.version>
 	</properties>
 
+	<profiles>
+		<profile>
+			<id>debug</id>
+			<activation>
+				<property>
+					<name>environment</name>
+					<value>!release</value>
+				</property>
+			</activation>
+			<properties>
+				<hibernate.hbm2ddl>update</hibernate.hbm2ddl>
+			</properties>
+		</profile>
+		<profile>
+			<id>release</id>
+			<properties>
+				<hibernate.hbm2ddl>validate</hibernate.hbm2ddl>
+			</properties>
+		</profile>
+	</profiles>
+
 	<repositories>
 		<repository>
 			<id>htmleasy</id>
@@ -47,6 +69,17 @@
 	</scm>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src/main/resources</directory>
+				<filtering>true</filtering>
+				<targetPath>${project.build.directory}/classes</targetPath>
+				<includes>
+					<include>hibernate*.cfg.xml</include>
+				</includes>
+			</resource>
+		</resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
