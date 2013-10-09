@@ -77,6 +77,14 @@
 					<include>hibernate*.cfg.xml</include>
 				</includes>
 			</resource>
+			<resource>
+				<directory>${project.basedir}/src/main/resources</directory>
+				<filtering>false</filtering>
+				<targetPath>${project.build.directory}/classes</targetPath>
+				<excludes>
+					<exclude>hibernate*.cfg.xml</exclude>
+				</excludes>
+			</resource>			
 		</resources>
 
 		<plugins>
