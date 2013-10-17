@@ -21,7 +21,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<supervision-api.version>1.0.8-SNAPSHOT</supervision-api.version>
 		<frontend.version>1.0.9-SNAPSHOT</frontend.version>
-		<ldap.version>1.1.4</ldap.version>
+		<ldap.version>1.1.5-SNAPSHOT</ldap.version>
 		<servlet-api.version>3.0.1</servlet-api.version>
 		<htmleasy.version>0.7</htmleasy.version>
 		<resteasy.version>2.2.1.GA</resteasy.version>
