@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.ac.cam.cl.dtg.teaching</groupId>
 	<artifactId>otter-parent</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>1.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Otter Parent Pom</name>
 	<description>Parent pom for Otter projects specifying sensible defaults</description>
@@ -19,7 +19,7 @@
 	</organization>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<supervision-api.version>1.0.8-SNAPSHOT</supervision-api.version>
+		<supervision-api.version>1.0.9-SNAPSHOT</supervision-api.version>
 		<frontend.version>1.0.9-SNAPSHOT</frontend.version>
 		<ldap.version>1.1.5-SNAPSHOT</ldap.version>
 		<servlet-api.version>3.0.1</servlet-api.version>
